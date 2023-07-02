@@ -98,7 +98,7 @@ const candidateData = {
       degreeName: "fdsa",
       startDate: "2023-07-25",
       endDate: "2023-07-13",
-      percentage: "23",
+      percentage: "43"
     },
     {
       institutionName: "fasdf",
