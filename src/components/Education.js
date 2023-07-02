@@ -34,7 +34,6 @@ function Education({onSave,data,next}){
   return (
     <>
     <h1 className='fs-title'>Educational Details</h1>
-    <h4 className='fs-subtitle'></h4>
     <form onSubmit={handleSubmit}>
       {education.map((educate, index) => (
         <div key={index}>

@@ -33,7 +33,6 @@ function Projects({onSave,data,next}){
   return (
     <>
     <h1 className='fs-title'>Projects</h1>
-    <h4 className='fs-subtitle'></h4>
     <form onSubmit={handleSubmit}>
       {projects.map((project, index) => (
         <div key={index}>

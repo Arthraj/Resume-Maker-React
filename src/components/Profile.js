@@ -1,4 +1,3 @@
-import profileLogo from "../images/# Sangeet Dance.jpg";
 import hiredLogo from "../images/# Sangeet Dance.jpg";
 import "../css/main.css";
 import "../css/print.css";
@@ -118,7 +117,7 @@ const candidateData = {
   ],
 };
 
-const Profile = ({}) => {
+const Profile = () => {
   // const user= { name, email, role };
   const personalData = candidateData.personalData;
   const education = candidateData.education;

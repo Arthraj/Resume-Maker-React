@@ -52,6 +52,7 @@ function ProfileImage({ onSave, data, next }) {
             <img
               id="output"
               src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-512.png"
+              alt="../images/# Sangeet Dance.jpg"
             />
             <input
               type="file"

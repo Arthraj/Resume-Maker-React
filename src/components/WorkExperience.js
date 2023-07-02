@@ -39,7 +39,6 @@ function WorkExperience({ onSave, data, next }) {
   return (
     <>
       <h1 className="fs-title">Work Experience</h1>
-      <h4 className="fs-subtitle"></h4>
 
       <form onSubmit={handleSubmit}>
         {workExperience.map((experience, index) => (
