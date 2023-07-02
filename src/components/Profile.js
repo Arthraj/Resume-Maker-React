@@ -98,7 +98,7 @@ const candidateData = {
       degreeName: "fdsa",
       startDate: "2023-07-25",
       endDate: "2023-07-13",
-      percentage: "43"
+      percentage: "43",
     },
     {
       institutionName: "fasdf",
@@ -137,7 +137,6 @@ const Profile = () => {
   const options = {
     orientation: "potrait",
     unit: "in",
-    // format: [16,16]
   };
   return (
     <div className="container" ref={ref}>
@@ -153,22 +152,19 @@ const Profile = () => {
               <h2 className="h1 mt-2">{personalData.name}</h2>
               <p> Full Stack Developer (MERN)</p>
 
-              <Pdf
-                targetRef={ref}
-                filename="RESUME.pdf"
-                options={options}
-                scale={0.7}
-              >
-                {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
-              </Pdf>
               <div className="d-print-none">
-                <a
-                  className="btn btn-light text-dark shadow-sm mt-1 me-1 rounded-pill"
-                  href="right-resume.pdf"
-                  target="_blank"
-                >
-                  Download CV(pdf)
-                </a>
+                
+                  <Pdf
+                    targetRef={ref}
+                    filename="RESUME.pdf"
+                    options={options}
+                    scale={0.6}
+                  >
+                    {({ toPdf }) => (
+                      <button className="btn btn-light text-dark shadow-sm mt-1 me-1 rounded-pill" onClick={toPdf}>Download Pdf</button>
+                    )}
+                  </Pdf>
+                
                 <a
                   className="btn btn-success rounded-pill shadow-sm mt-1"
                   href="#contact"
